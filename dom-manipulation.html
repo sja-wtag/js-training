@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Manipulation Example</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    #title {
+      transition: all 0.3s ease-in-out;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 200px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    #description {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #555;
+    }
+
+    .highlight {
+      color: white;
+      background-color: green;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Welcome to DOM Manipulation!</h1>
+  
+  <button id="changeColorBtn">Change Background Color</button>
+  <button id="toggleTextBtn">Toggle Description</button>
+  <button id="increaseFontBtn">Increase Font Size +</button>
+  <button id="decreaseFontBtn">Decrease Font Size -</button>
+
+  <p id="description">This is a simple interactive paragraph using JavaScript and DOM.</p>
+
+  <h2>My List</h2>
+  <ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <input type="text" id="newItemInput" placeholder="Add new item..." />
+  <button id="addItemBtn">Add Item</button>
+
+  <script src="dom-manipulation.js"></script>
+</body>
+</html>
