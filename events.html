@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>JavaScript Events</title>
+    <title>JavaScript Events & Creating Interactions with Them</title>
     <style>
         #box {
             width: 200px;
@@ -16,6 +16,8 @@
         }
     </style>
     <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="events.css">
+
 </head>
 
 <body>
@@ -25,7 +27,13 @@
     <div id="box">Hover me</div>
 
 
-    <h1>Custom Dropdown</h1>
+    <h1>JS Interactions</h1>
+    <h3>Custom Button</h3>
+    <button class="ripple-button">Ripple Button</button>
+    <script src="dropdown.js"></script>
+    <script src="events.js"></script>
+
+    <h3>Custom Dropdown</h3>
     <div class="dropdown-container">
         <input type="text" id="myInput" placeholder="Select an option..." autocomplete="off" />
         <div class="dropdown-options" id="dropdownOptions">
@@ -36,8 +44,18 @@
         </div>
       </div>
 
-    <script src="dropdown.js"></script>
-    <script src="events.js"></script>
+      <h3>Clipboard Copy</h3>
+      <div>
+        <input id="copyText" value="Hello World" readonly />
+        <button id="copyBtn">Copy</button>
+      </div>
+
+
+      <div class="tooltip-wrapper">
+        Hover me
+        <span class="tooltip">I'm a tooltip!</span>
+    </div>
+
 </body>
 
 </html>
