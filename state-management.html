@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>State Management Example</title>
+  <link rel="stylesheet" href="state-management.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="greeting">Welcome, <span id="display-name">Guest</span>!</h1>
+
+    <!-- User Name Input -->
+    <div class="input-group">
+      <label for="username">Enter your name:</label>
+      <input type="text" id="username" placeholder="Your name..." />
+      <button id="save-btn">Save Name</button>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="toggle-mode-btn">Toggle Dark Mode</button>
+
+    <!-- Theme Selector -->
+    <div class="input-group">
+      <label for="theme-select">Select Theme:</label>
+      <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="solarized">Solarized</option>
+      </select>
+    </div>
+
+    <!-- Font Size -->
+    <div class="input-group">
+      <label for="font-size">Font Size:</label>
+      <input type="range" id="font-size" min="12" max="32" value="16" />
+    </div>
+
+    <!-- Show Greeting Toggle -->
+    <div class="input-group">
+      <label><input type="checkbox" id="toggle-greeting" checked /> Show Greeting</label>
+    </div>
+
+    <!-- Color Picker -->
+    <div class="input-group">
+      <label for="text-color">Choose Text Color:</label>
+      <input type="color" id="text-color" value="#333333" />
+    </div>
+  </div>
+
+  <script src="state-management.js"></script>
+</body>
+</html>

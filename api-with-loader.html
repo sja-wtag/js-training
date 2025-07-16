@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multiple Loaders with API</title>
+  <link rel="stylesheet" href="api-with-loader.css">
+</head>
+<body>
+  <h2>Load Data with Different Loaders</h2>
+
+  <div class="buttons">
+    <button onclick="loadUsers()">Load Users (Skeleton)</button>
+    <button onclick="loadPosts()">Load Posts (Spinner)</button>
+    <button onclick="loadComments()">Load Comments (Dots)</button>
+  </div>
+
+  <div id="loader"></div>
+  <div id="dataContainer" class="container"></div>
+  <div id="message" class="message"></div>
+
+  <script src="api-with-loader.js"></script>
+</body>
+</html>
