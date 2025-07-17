@@ -1,0 +1,31 @@
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    padding: 1em;
+    background-color: #474747;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .accordion-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    background-color: #f1f1f1;
+    padding: 0 1em;
+    border-top: 1px solid #ccc;
+  }
+  
+  .accordion-body.open {
+    max-height: 200px; /* Adjust based on expected content height */
+    padding: 1em;
+  }
+  

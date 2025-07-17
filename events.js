@@ -54,6 +54,24 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('copyBtn').textContent = originalText;
         }, 1000);
     });
+
+    const openBtn = document.querySelector('.open-modal-btn');
+    const overlay = document.getElementById('modalOverlay');
+    const closeBtn = document.getElementById('closeModal');
+
+    openBtn.addEventListener('click', () => {
+        overlay.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('active');
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+        }
+    });
 });
 
 document.querySelectorAll('.ripple-button').forEach(button => {
@@ -69,4 +87,3 @@ document.querySelectorAll('.ripple-button').forEach(button => {
         setTimeout(() => circle.remove(), 600);
     });
 });
-
