@@ -30,19 +30,7 @@
     cursor: pointer;
   }
   
-  .tooltip {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    position: absolute;
-    bottom: 125%;
-    background: black;
-    color: white;
-    padding: 5px 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-  }
-  
+
   .tooltip-wrapper:hover .tooltip {
     visibility: visible;
     opacity: 1;

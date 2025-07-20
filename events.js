@@ -72,7 +72,25 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.classList.remove('active');
         }
     });
+
+    // Get elements
+const tooltipBtn = document.getElementById('tooltipBtn');
+const tooltip = document.getElementById('tooltip');
+
+// Show the tooltip when mouse is over the button
+tooltipBtn.addEventListener('mouseover', function() {
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
 });
+
+// Hide the tooltip when mouse leaves the button
+tooltipBtn.addEventListener('mouseout', function() {
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.opacity = '0';
+});
+
+});
+
 
 document.querySelectorAll('.ripple-button').forEach(button => {
     button.addEventListener('click', function (e) {

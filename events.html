@@ -34,7 +34,15 @@
   <h3>Custom Button</h3>
   <button class="ripple-button">Ripple Button</button>
 
+  <h3> Html Dropdown</h3>
+  <label for="cars">Choose a car:</label>
 
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
   <h3>Custom Dropdown</h3>
   <div class="dropdown-container">
     <input type="text" id="myInput" placeholder="Select an option..." autocomplete="off" />
@@ -53,9 +61,16 @@
   </div>
 
   <h2>Tooltip Example</h2>
+  <h4>Tooltip Triggered from CSS</h4>
   <div class="tooltip-wrapper">
     Hover me
     <span class="tooltip">I'm a tooltip!</span>
+  </div>
+
+  <h4>Tooltip Triggered from JS</h4>
+  <div class="container">
+    <div class="tooltip-trigger" id="tooltipBtn">Hover over me</div>
+    <div class="tooltip" id="tooltip">This is a tooltip</div>
   </div>
 
   <h2>Modal Example</h2>
@@ -94,7 +109,8 @@
       <button class="tab-btn" data-tab="tab3">Tab 3</button>
     </div>
     <div class="tab-content active" id="tab1">Hello, There is is content from tab 1</div>
-    <div class="tab-content" id="tab2">Hello, There is is content from tab 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dignissimos
+    <div class="tab-content" id="tab2">Hello, There is is content from tab 2. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Non dignissimos
       repudiandae ipsum eligendi minima suscipit corporis adipisci perspiciatis eum harum voluptate veniam rem quae,
       dolores voluptatem laudantium facilis alias et.</div>
   </div>
