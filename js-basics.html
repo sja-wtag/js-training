@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <link rel="stylesheet" href="js-basics.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Basics</h1>
+
+        <div id="result"></div>
+
+        <!-- Buttons for each example -->
+        <button onclick="showVariableExample()">Show Variable Example</button>
+        <button onclick="showFunctionExample()">Show Function Example</button>
+        <button onclick="showConditionalExample()">Show Conditional Example</button>
+        <button onclick="showLoopExample()">Show Loop Example</button>
+        <div style="display: block;margin-top: 30px;">
+            <button onclick="checkAge()">Check Age</button>
+            <input id="check-age" /> 
+        </div>
+
+    </div>
+
+    <script>
+
+
+        // 1. Variables
+        let message = "Hello, World!";
+        const number = 10;
+        let resultText = '';
+
+        // Function to display the variable example
+        function showVariableExample() {
+            resultText = `Variable Message: ${message}`;
+            document.getElementById("result").innerHTML = resultText;
+        }
+
+        // 2. Functions
+        function greet() {
+            return message;
+        }
+
+        function addNumbers(a, b) {
+            return a + b;
+        }
+
+        // Function to display the function example
+        function showFunctionExample() {
+            resultText = `
+        Function Greet: ${greet()}<br>
+        Sum of 5 + 10: ${addNumbers(5, 10)}
+    `;
+            document.getElementById("result").innerHTML = resultText;
+        }
+
+        // 3. Conditionals
+        function checkNumber() {
+            if (number > 5) {
+                return "The number is greater than 5.";
+            } else {
+                return "The number is less than or equal to 5.";
+            }
+        }
+
+        // Function to display the conditional example
+        function showConditionalExample() {
+            resultText = `Conditional Check: ${checkNumber()}`;
+            document.getElementById("result").innerHTML = resultText;
+        }
+
+        // 4. Loops
+        function loopThroughNumbers() {
+            let loopResult = "";
+            for (let i = 1; i <= number; i++) {
+                loopResult += `Looping through number: ${i}<br>`;
+            }
+            return loopResult;
+        }
+
+        // Function to display the loop example
+        function showLoopExample() {
+            resultText = `Loop Example:\n${loopThroughNumbers()}`;
+            document.getElementById("result").innerHTML = resultText;
+        }
+
+        function checkAge() {
+            const age = document.getElementById("check-age").value;
+            if (!age) {
+                alert("No Input");
+            }
+            else if (age >= 18) {
+                alert("Authorized");
+            }
+            else {
+                alert("Authorized");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

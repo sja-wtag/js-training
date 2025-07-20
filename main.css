@@ -1,12 +1,67 @@
-a {
-    display: block; /* Makes each link appear on a new line */
-    margin: 10px 0;
-    text-decoration: none; /* Removes underline */
-    color: #007BFF; /* Link color */
-    font-weight: bold;
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a:hover {
-    color: #0056b3; /* Darker on hover */
-    text-decoration: underline;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+nav {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px; /* Limiting the width of the navigation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+footer p {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
 }
