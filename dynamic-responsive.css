@@ -53,6 +53,25 @@ button {
   gap: 10px;
 }
 
+/* Responsive grid inside modal */
+@media (min-width: 800px) {
+  .modal-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+  .modal-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 499px) {
+  .modal-items {
+    grid-template-columns: 1fr;
+  }
+}
+
 .item {
   background: #e9ecef;
   padding: 20px;
