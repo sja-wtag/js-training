@@ -1,0 +1,41 @@
+button.custom-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button.custom-button.blue {
+    background-color: #007BFF;
+}
+
+button.custom-button.red {
+    background-color: #dc3545;
+}
+
+button.custom-button.green {
+    background-color: #22BB33;
+}
+
+button.custom-button.info {
+    background-color: #ff25ed;
+}
+
+button.custom-button:hover {
+    filter: brightness(1.1);
+}
+
+.card.primary {
+  border-left: 6px solid #007BFF;
+}
+
+.card.success {
+  border-left: 6px solid #28A745;
+}
+
+.card.warning {
+  border-left: 6px solid #FFC107;
+}

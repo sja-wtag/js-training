@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Select Dropdown</title>
+    <script src="custom-select-dropdown.js" defer></script>
+    <link rel="stylesheet" href="custom-select-dropdown.css">
+</head>
+
+<body>
+
+    <h2>Single Select</h2>
+    <custom-select-dropdown data='[{"label": "Apple", "value": "apple"}, {"label": "Banana", "value": "banana"}]'>
+    </custom-select-dropdown>
+
+    <h2>Multiple Select (Checkbox)</h2>
+    <custom-select-dropdown multiple checkbox
+        data='[{"label": "Red", "value": "red"}, {"label": "Blue", "value": "blue"}]'>
+    </custom-select-dropdown>
+
+    <h2>Nested Values</h2>
+    <custom-select-dropdown nested multiple checkbox data='[
+        {"label": "Fruits", "value": "fruits", "children": [
+            {"label": "Apple", "value": "apple"},
+            {"label": "Orange", "value": "orange"}
+        ]},
+        {"label": "Vegetables", "value": "vegetables", "children": [
+            {"label": "Carrot", "value": "carrot"},
+            {"label": "Potato", "value": "potato"}
+        ]}
+    ]'>
+    </custom-select-dropdown>
+
+    <h2>Radio Buttons</h2>
+    <custom-select-dropdown radio data='[{"label": "Male", "value": "male"}, {"label": "Female", "value": "female"}]'>
+    </custom-select-dropdown>
+
+</body>
+
+</html>

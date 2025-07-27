@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reusable Component with Logic</title>
+    <link rel="stylesheet" href="list-component.css">
+</head>
+
+<body>
+
+    <h2>Fruit List</h2>
+    <input type="text" id="searchInput" placeholder="🔍 Search fruits..." />
+
+    <!-- 👇 Pass true or false to toggle emoji display -->
+    <list-component showimage="false"></list-component>
+    <modal-component id="myModal" closebutton="true" blur="true" draggable="true" resizable="true">
+        <h3>Welcome!</h3>
+        <p>This is a draggable, resizable modal with background blur.</p>
+    </modal-component>
+
+    <custom-button label="Open Modal" color="blue" onclick="document.getElementById('myModal').open()"></custom-button>
+
+    <script src="custom-button.js"></script>
+    <script src="list-component.js"></script>
+    <script src="modal-component.js"></script>
+
+
+</body>
+
+</html>
